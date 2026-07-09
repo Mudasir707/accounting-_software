@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reports</title>
 
+<style>
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f4f6f9;
+}
+
+header{
+background:#6f42c1;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+text-align:center;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-3px);
+transition:.2s;
+}
+
+h3{
+color:#6f42c1;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>Reports</h2>
+</header>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+<h3>📊 Sales Report</h3>
+<p>View daily, monthly and yearly sales.</p>
+</div>
+
+<div class="card">
+<h3>🛒 Purchase Report</h3>
+<p>View purchase history.</p>
+</div>
+
+<div class="card">
+<h3>📦 Stock Report</h3>
+<p>Current inventory status.</p>
+</div>
+
+<div class="card">
+<h3>💰 Profit & Loss</h3>
+<p>Business income and expenses.</p>
+</div>
+
+<div class="card">
+<h3>🏦 Balance Sheet</h3>
+<p>Assets and liabilities.</p>
+</div>
+
+<div class="card">
+<h3>👥 Customer Ledger</h3>
+<p>Outstanding customer balances.</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
