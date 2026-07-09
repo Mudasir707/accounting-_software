@@ -11,3 +11,20 @@ document.querySelector("form").addEventListener("submit", function(e){
         alert("Invalid Username or Password");
     }
 });
+const form = document.querySelector("form");
+
+if (form) {
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const username = document.querySelector("input[type='text']").value.trim();
+        const password = document.querySelector("input[type='password']").value.trim();
+
+        if (username === "admin" && password === "admin123") {
+            alert("Welcome to Sheen Accounting Software");
+            window.location.href = "dashboard.html";
+        } else {
+            alert("Invalid username or password");
+        }
+    });
+}
