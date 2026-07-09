@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory</title>
 
+<style>
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f4f6f9;
+}
+
+header{
+background:#0d6efd;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+input{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button{
+background:#0d6efd;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+cursor:pointer;
+}
+
+table{
+width:100%;
+margin-top:20px;
+border-collapse:collapse;
+}
+
+th,td{
+padding:12px;
+border:1px solid #ddd;
+text-align:left;
+}
+
+th{
+background:#0d6efd;
+color:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>Inventory Management</h2>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h3>Add Item</h3>
+
+<input type="text" placeholder="Item Name">
+
+<input type="text" placeholder="Item Code">
+
+<input type="number" placeholder="Quantity">
+
+<input type="number" placeholder="Purchase Price">
+
+<input type="number" placeholder="Selling Price">
+
+<button>Add Item</button>
+
+<table>
+
+<tr>
+<th>Item</th>
+<th>Code</th>
+<th>Stock</th>
+<th>Purchase</th>
+<th>Sale</th>
+</tr>
+
+<tr>
+<td>Demo Apple Box</td>
+<td>APL001</td>
+<td>100</td>
+<td>₹500</td>
+<td>₹650</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
