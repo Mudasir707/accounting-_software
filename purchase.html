@@ -1,1 +1,119 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purchase</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f4f6f9;
+margin:0;
+}
+
+header{
+background:#198754;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+input{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button{
+background:#198754;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+cursor:pointer;
+}
+
+table{
+width:100%;
+margin-top:20px;
+border-collapse:collapse;
+}
+
+th,td{
+border:1px solid #ddd;
+padding:12px;
+text-align:left;
+}
+
+th{
+background:#198754;
+color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Purchase Entry</h2>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h3>New Purchase</h3>
+
+<input type="text" placeholder="Supplier Name">
+
+<input type="text" placeholder="Item Name">
+
+<input type="number" placeholder="Quantity">
+
+<input type="number" placeholder="Purchase Rate">
+
+<button>Save Purchase</button>
+
+<table>
+
+<tr>
+<th>Bill No</th>
+<th>Supplier</th>
+<th>Item</th>
+<th>Qty</th>
+<th>Amount</th>
+</tr>
+
+<tr>
+<td>P001</td>
+<td>Demo Supplier</td>
+<td>Apple Box</td>
+<td>100</td>
+<td>₹50,000</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
