@@ -1,1 +1,13 @@
-console.log('Sheen Accounting Software loaded');
+document.querySelector("form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const username = document.querySelector("input[type=text]").value;
+    const password = document.querySelector("input[type=password]").value;
+
+    if(username==="admin" && password==="admin123"){
+        alert("Login Successful!");
+        window.location.href="dashboard.html";
+    }else{
+        alert("Invalid Username or Password");
+    }
+});
