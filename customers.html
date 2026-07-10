@@ -76,3 +76,28 @@ margin-bottom:15px;
 
 </body>
 </html>
+<h2>Customer Management</h2>
+
+<input type="text" id="name" placeholder="Customer Name">
+<input type="text" id="phone" placeholder="Phone Number">
+<input type="text" id="city" placeholder="City">
+
+<button onclick="saveCustomer()">Save Customer</button>
+
+<hr>
+
+<table border="1" width="100%">
+<thead>
+<tr>
+<th>Name</th>
+<th>Phone</th>
+<th>City</th>
+</tr>
+</thead>
+
+<tbody id="customerTable">
+</tbody>
+
+</table>
+
+<script type="module" src="js/customers.js"></script>
