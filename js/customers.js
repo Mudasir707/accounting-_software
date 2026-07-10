@@ -7,7 +7,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
+  apiKey: "AIzaSyCOQx6wMeSQ4IJQdg0Ex1LZOfJaNgdV28Q",
   authDomain: "sheen-accounts.firebaseapp.com",
   projectId: "sheen-accounts",
   storageBucket: "sheen-accounts.firebasestorage.app",
