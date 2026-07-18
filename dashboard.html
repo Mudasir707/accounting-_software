@@ -1,150 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard</title>
-<link rel="stylesheet" href="style.css">
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f4f6f9;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheen Accounting Software</title>
 
-.header{
-background:#0d6efd;
-color:white;
-padding:20px;
-font-size:24px;
-font-weight:bold;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-padding:20px;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:12px;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
-text-align:center;
-}
-
-.card h2{
-color:#0d6efd;
-margin-bottom:10px;
-}
-
-.amount{
-font-size:28px;
-font-weight:bold;
-}
-
-.menu{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:15px;
-padding:20px;
-}
-
-.menu a{
-text-decoration:none;
-background:#0d6efd;
-color:white;
-padding:18px;
-border-radius:10px;
-text-align:center;
-font-weight:bold;
-}
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="header">
-Sheen Accounting Software
-</div>
+<header class="topbar">
+  <h1>🏢 Sheen Accounting</h1>
+</header>
 
-<div class="grid">
+<main class="dashboard">
 
-<div class="card">
-<h2>Today's Sales</h2>
-<div class="amount">₹0.00</div>
-</div>
+  <div class="card">
+    <h2>👥 Customers</h2>
+    <div class="amount" id="customerCount">0</div>
+  </div>
 
-<div class="card">
-<h2>Today's Purchase</h2>
-<div class="amount">₹0.00</div>
-</div>
+  <div class="card">
+    <h2>💰 Today's Sales</h2>
+    <div class="amount" id="salesTotal">₹0</div>
+  </div>
 
-<div class="card">
-<h2>Cash Balance</h2>
-<div class="amount">₹0.00</div>
-</div>
+  <div class="card">
+    <h2>📦 Inventory Items</h2>
+    <div class="amount" id="stockTotal">0</div>
+  </div>
 
-<div class="card">
-<h2>Stock Items</h2>
-<div class="amount">0</div>
-</div>
+  <div class="card">
+    <h2>🚚 Suppliers</h2>
+    <div class="amount" id="supplierTotal">0</div>
+  </div>
 
-</div>
+  <h2 class="section-title">Quick Menu</h2>
 
-<div class="menu">
+  <div class="menu-grid">
 
-<a href="#">Customers</a>
+    <a href="customers.html" class="menu-btn">
+      👥
+      <span>Customers</span>
+    </a>
 
-<a href="#">Suppliers</a>
+    <a href="sales.html" class="menu-btn">
+      🧾
+      <span>Sales</span>
+    </a>
 
-<a href="#">Sales</a>
+    <a href="purchase.html" class="menu-btn">
+      🛒
+      <span>Purchase</span>
+    </a>
 
-<a href="#">Purchase</a>
+    <a href="inventory.html" class="menu-btn">
+      📦
+      <span>Inventory</span>
+    </a>
 
-<a href="#">Inventory</a>
+    <a href="suppliers.html" class="menu-btn">
+      🚚
+      <span>Suppliers</span>
+    </a>
 
-<a href="#">Payroll</a>
+    <a href="payroll.html" class="menu-btn">
+      💰
+      <span>Payroll</span>
+    </a>
 
-<a href="#">Reports</a>
+    <a href="reports.html" class="menu-btn">
+      📊
+      <span>Reports</span>
+    </a>
 
-<a href="#">Settings</a>
+    <a href="settings.html" class="menu-btn">
+      ⚙️
+      <span>Settings</span>
+    </a>
 
-</div>
+    <a href="index.html" class="menu-btn logout">
+      🚪
+      <span>Logout</span>
+    </a>
+
+  </div>
+
+</main>
+
+<script type="module" src="js/dashboard.js"></script>
 
 </body>
 </html>
-<div class="menu">
-
-<a href="customers.html">👥 Customers</a>
-
-<a href="sales.html">🧾 Sales</a>
-
-<a href="purchase.html">🛒 Purchase</a>
-
-<a href="inventory.html">📦 Inventory</a>
-
-<a href="suppliers.html">🚚 Suppliers</a>
-
-<a href="payroll.html">💰 Payroll</a>
-
-<a href="reports.html">📊 Reports</a>
-
-<a href="settings.html">⚙️ Settings</a>
-
-<a href="index.html">🚪 Logout</a>
-
-</div>
-<div class="grid">
-
-<div class="card">
-<h2>Customers</h2>
-<div class="amount" id="customerCount">0</div>
-</div>
-
 <div class="card">
 <h2>Today's Sales</h2>
 <div class="amount" id="salesTotal">₹0</div>
