@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sheen Accounting Software - Login</title>
+
+<title>Sheen Accounting Login</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -12,37 +13,36 @@
 
 <div class="login-container">
 
-<div class="login-card">
+    <div class="login-card">
 
-<h1>Sheen Accounting Software</h1>
+        <h1>🏢 Sheen Accounting</h1>
+        <p>Sign in to continue</p>
 
-<p>Secure Login</p>
+        <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+        >
 
-<form>
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+        >
 
-<div class="input-group">
-<label>Username</label>
-<input type="text" placeholder="Enter Username">
+        <button id="loginBtn">
+            Login
+        </button>
+
+        <p class="footer">
+            Powered by Sheen Agri Fresh Pvt. Ltd.
+        </p>
+
+    </div>
+
 </div>
 
-<div class="input-group">
-<label>Password</label>
-<input type="password" placeholder="Enter Password">
-</div>
+<script type="module" src="js/login.js"></script>
 
-<button type="submit">Login</button>
-
-</form>
-
-<div class="footer">
-© 2026 Sheen Agri Fresh Pvt. Ltd.
-</div>
-
-</div>
-
-</div>
-
-<script src="script.js"></script>
-  <script type="module" src="firebase.js"></script>
 </body>
 </html>
