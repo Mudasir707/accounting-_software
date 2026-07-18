@@ -11,6 +11,6 @@ const firebaseConfig = {
   measurementId: "G-1PQS5V7NLY"
 };
 
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
 
 console.log("Firebase Connected Successfully!");
