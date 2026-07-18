@@ -1,16 +1,11 @@
-const USERNAME = "admin";
-const PASSWORD = "123456";
-
 document.getElementById("loginBtn").addEventListener("click", function () {
 
     const username = document.getElementById("username").value.trim();
     const password = document.getElementById("password").value;
 
-    if (username === USERNAME && password === PASSWORD) {
+    if (username === "admin" && password === "123456") {
 
-        alert("Login Successful");
-
-        window.location.href = "dashboard.html";
+        window.location.replace("./dashboard.html");
 
     } else {
 
