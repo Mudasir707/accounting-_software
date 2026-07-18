@@ -5,7 +5,7 @@ document.getElementById("loginBtn").addEventListener("click", function () {
 
     if (username === "admin" && password === "123456") {
 
-        window.location.replace("./dashboard.html");
+        window.location.replace("dashboard.html");
 
     } else {
 
