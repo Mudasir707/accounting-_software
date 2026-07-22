@@ -21,7 +21,7 @@ if (form) {
         const password = document.querySelector("input[type='password']").value.trim();
 
         if (username === "admin" && password === "admin123") {
-            alert("Welcome to Sheen Accounting Software");
+            alert("Welcome to Yaarwan Accounting Software");
             window.location.href = "dashboard.html";
         } else {
             alert("Invalid username or password");
